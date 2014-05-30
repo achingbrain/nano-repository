@@ -1,0 +1,10 @@
+{
+  "views": {
+    "all": {
+      "map": "function(doc) {if(doc.name) emit(null, doc)}"
+    },
+    "byName": {
+      "map": "function(doc) {if(doc.name) emit(doc.name, doc)}"
+    }
+  }
+}

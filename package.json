@@ -1,0 +1,20 @@
+{
+  "name": "nano-repository",
+  "version": "0.0.1",
+  "description": "Makes using CouchDB via Nano even easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/achingbrain/nano-repository.git"
+  },
+  "devDependencies": {
+    "mocha": "^1.0",
+    "chai": "^1.0",
+    "sinon": "^1.0",
+    "istanbul": "^0.2",
+    "testsuite": "^1.0"
+  }
+}
