@@ -1,6 +1,6 @@
 {
   "name": "nano-repository",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Makes using CouchDB via Nano even easier",
   "main": "index.js",
   "scripts": {
