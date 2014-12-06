@@ -33,7 +33,7 @@ describe('Repository', function() {
   it('should object when no database passed', function() {
     expect(function() {
       new TestRepository();
-    }).to.throw;
+    }).to.throw(Error);
   });
 
   it('should generate methods from views', function (done) {
@@ -57,6 +57,17 @@ describe('Repository', function() {
       expect(repository.findByName).to.be.a('function');
 
       done();
+    });
+  });
+  
+  it('should callback with error when view file does not exist', function (done) {
+    var repository = new TestRepository(db);
+    
+    // update the views
+    repository.updateViews(__dirname + '/fixtures/nope.json', function(error) {
+      expect(error).to.be.ok
+      
+      done()
     });
   });
 
