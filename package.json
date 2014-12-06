@@ -4,17 +4,19 @@
   "description": "Makes using CouchDB via Nano even easier",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha test"
+    "test": "istanbul cover _mocha test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/achingbrain/nano-repository.git"
   },
   "devDependencies": {
-    "mocha": "^1.0",
+    "coveralls": "^2.8",
+    "mocha": "^2.0",
     "chai": "^1.0",
     "sinon": "^1.0",
-    "istanbul": "^0.2",
+    "istanbul": "^0.3",
     "testsuite": "^1.0"
   }
 }

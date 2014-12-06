@@ -1,5 +1,7 @@
 # nano-repository
 
+[![Build Status](https://travis-ci.org/achingbrain/nano-repository.svg)](https://travis-ci.org/achingbrain/nano-repository) [![Dependency Status](https://david-dm.org/achingbrain/nano-repository.svg)](https://david-dm.org/achingbrain/nano-repository) [![Coverage Status](https://img.shields.io/coveralls/achingbrain/nano-repository/master.svg)](https://coveralls.io/r/achingbrain/nano-repository)
+
 Working with CouchDB is a pretty pleasant experience, mostly because of the rather excellent [nano](https://github.com/dscape/nano) library.
 
 There are a couple of rough edges though, so what else could be better but an abstracton on top of an abstraction!
